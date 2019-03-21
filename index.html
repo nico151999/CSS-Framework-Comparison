@@ -9,55 +9,157 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
     <link href="css/ratchet.css" rel="stylesheet">
+	<link href="css/ratchet-theme-ios.css" rel="stylesheet">
     <script src="js/ratchet.js"></script>
   </head>
   <body>
-		  <header class="bar bar-nav">
-			  <a href="#popover">
-				<h1 class="title">
-				  Mitwirkende
-				  <span class="icon icon-caret"></span>
-				</h1>
-			  </a>
-		  </header>
 
-			<nav class="bar bar-tab">
-			  <a class="tab-item active" data-ignore="push" href="index.html">
-				<span class="icon icon-home"></span>
-				<span class="tab-label">Startseite</span>
-			  </a>
-			  <a class="tab-item" data-ignore="push" href="login.html">
-				<span class="icon icon-person"></span>
-				<span class="tab-label">Login</span>
-			  </a>
-			  <a class="tab-item" data-ignore="push" href="overview.html">
-				<span class="icon icon-list"></span>
-				<span class="tab-label">Übersicht</span>
-			  </a>
-			  <a class="tab-item" data-ignore="push" href="#">
-				<span class="icon icon-search"></span>
-				<span class="tab-label">Suche</span>
-			  </a>
-			  <a class="tab-item" data-ignore="push" href="#">
-				<span class="icon icon-gear"></span>
-				<span class="tab-label">Einstellungen</span>
-			  </a>
-			</nav>
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar bar-nav">
+	  <a class="icon icon-gear pull-right" href="#settingsModal"></a>
+	  <h1 class="title">Ratchet v2.2.0</h1>
+  </header>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
-		<div id="popover" class="popover">
-		  <header class="bar bar-nav">
-			<h1 class="title">Mitwirkende</h1>
-		  </header>
+	  <div class="content-padded">
+		  <h3>Ratchet Example App</h3>
+	  </div>
+	  <div class="card">
 		  <ul class="table-view">
-			<li class="table-view-cell">Marc Folk</li>
-			<li class="table-view-cell">Jonas Kalaschnick</li>
-			<li class="table-view-cell">Moritz Heilemann</li>
-			<li class="table-view-cell">Philipp Kruse</li>
+			  <li class="table-view-cell">
+				  <a class="push-right" href="examples/navigation.html" data-transition="slide-in">
+					  <strong>Navigation Bars</strong>
+				  </a>
+			  </li>
+			  <li class="table-view-cell">
+				  <a class="push-right" href="examples/tab-bar.html" data-transition="slide-in">
+					  <strong>Login/Register</strong>
+				  </a>
+			  </li>
+			  <li class="table-view-cell">
+				  <a class="push-right" href="examples/block-buttons.html" data-transition="slide-in">
+					  <strong>Table</strong>
+				  </a>
+			  </li>
+			  <li class="table-view-cell">
+				  <a class="push-right" href="examples/form.html" data-transition="slide-in">
+					  <strong>Tabs</strong>
+				  </a>
+			  </li>
+			  <li class="table-view-cell">
+				  <a class="push-right" href="examples/slider.html" data-transition="slide-in">
+					  <strong>Icons and Fonts</strong>
+				  </a>
+			  </li>
+			  <li class="table-view-cell">
+				  <a class="push-right" href="examples/slider.html" data-transition="slide-in">
+					  <strong>Image Gallery (Slider) </strong>
+				  </a>
+			  </li>
+			  <li class="table-view-cell">
+				  <a class="push-right" href="examples/slider.html" data-transition="slide-in">
+					  <strong>Special components</strong>
+				  </a>
+			  </li>
+			  <li class="table-view-cell">
+				  <a class="push-right" href="examples/slider.html" data-transition="slide-in">
+					  <strong>Footer</strong>
+				  </a>
+			  </li>
 		  </ul>
-		</div>
-		<div style="margin-top:50px;padding:10px">
-			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.</p>
-		</div>
+	  </div>
   </div>
+
+  <!-- Settings Modal -->
+  <div id="settingsModal" class="modal">
+	  <header class="bar bar-nav">
+		  <a class="icon icon-close pull-right" href="#settingsModal"></a>
+		  <h1 class="title">Settings Example</h1>
+	  </header>
+
+	  <div class="content">
+		  <form class="input-group">
+			  <input type="text" placeholder="Full name">
+			  <input type="email" placeholder="Email">
+			  <input type="text" placeholder="Username">
+		  </form>
+
+		  <h5 class="content-padded">App settings</h5>
+
+		  <ul class="table-view">
+			  <li class="table-view-cell media">
+				  <span class="media-object pull-left icon icon-sound"></span>
+				  <div class="media-body">
+					  Enable sounds
+				  </div>
+				  <div class="toggle">
+					  <div class="toggle-handle"></div>
+				  </div>
+			  </li>
+			  <li class="table-view-cell media">
+				  <span class="media-object pull-left icon icon-person"></span>
+				  <div class="media-body">
+					  Parental controls
+				  </div>
+				  <div class="toggle">
+					  <div class="toggle-handle"></div>
+				  </div>
+			  </li>
+		  </ul>
+		  <div class="content-padded">
+			  <button class="btn btn-positive btn-block">Save settings</button>
+		  </div>
+	  </div>
+  </div>
+
+
+		  <!--<header class="bar bar-nav">-->
+			  <!--<a href="#popover">-->
+				<!--<h1 class="title">-->
+				  <!--Mitwirkende-->
+				  <!--<span class="icon icon-caret"></span>-->
+				<!--</h1>-->
+			  <!--</a>-->
+		  <!--</header>-->
+
+			<!--<nav class="bar bar-tab">-->
+			  <!--<a class="tab-item active" data-ignore="push" href="index.html">-->
+				<!--<span class="icon icon-home"></span>-->
+				<!--<span class="tab-label">Startseite</span>-->
+			  <!--</a>-->
+			  <!--<a class="tab-item" data-ignore="push" href="examples/login.html">-->
+				<!--<span class="icon icon-person"></span>-->
+				<!--<span class="tab-label">Login</span>-->
+			  <!--</a>-->
+			  <!--<a class="tab-item" data-ignore="push" href="examples/overview.html">-->
+				<!--<span class="icon icon-list"></span>-->
+				<!--<span class="tab-label">Übersicht</span>-->
+			  <!--</a>-->
+			  <!--<a class="tab-item" data-ignore="push" href="#">-->
+				<!--<span class="icon icon-search"></span>-->
+				<!--<span class="tab-label">Suche</span>-->
+			  <!--</a>-->
+			  <!--<a class="tab-item" data-ignore="push" href="examples/einstellungen.html">-->
+				<!--<span class="icon icon-gear"></span>-->
+				<!--<span class="tab-label">Einstellungen</span>-->
+			  <!--</a>-->
+			<!--</nav>-->
+  <!--<div class="content">-->
+		<!--<div id="popover" class="popover">-->
+		  <!--<header class="bar bar-nav">-->
+			<!--<h1 class="title">Mitwirkende</h1>-->
+		  <!--</header>-->
+		  <!--<ul class="table-view">-->
+			<!--<li class="table-view-cell">Marc Folk</li>-->
+			<!--<li class="table-view-cell">Jonas Kalaschnick</li>-->
+			<!--<li class="table-view-cell">Moritz Heilemann</li>-->
+			<!--<li class="table-view-cell">Philipp Kruse</li>-->
+		  <!--</ul>-->
+		<!--</div>-->
+		<!--<div style="margin-top:50px;padding:10px">-->
+			<!--<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.</p>-->
+		<!--</div>-->
+  <!--</div>-->
   </body>
 </html>

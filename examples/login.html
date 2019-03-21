@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Ratchet v2.2.0</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="mobile-web-app-capable" content="yes">
-    <link href="css/ratchet.css" rel="stylesheet">
-    <script src="js/ratchet.js"></script>
+    <link href="../css/ratchet.css" rel="stylesheet">
+    <script src="../js/ratchet.js"></script>
   </head>
   <body>
   		  <header class="bar bar-nav">
-			<h1 class="title">Privater Bereich</h1>
+			<h1 class="title">Login</h1>
 		  </header>
 			<nav class="bar bar-tab">
-			  <a class="tab-item" data-ignore="push" href="index.html">
+			  <a class="tab-item" data-ignore="push" href="../index.html">
 				<span class="icon icon-home"></span>
 				<span class="tab-label">Startseite</span>
 			  </a>
@@ -32,16 +32,39 @@
 				<span class="icon icon-search"></span>
 				<span class="tab-label">Suche</span>
 			  </a>
-			  <a class="tab-item" data-ignore="push" href="#">
+			  <a class="tab-item" data-ignore="push" href="einstellungen.html">
 				<span class="icon icon-gear"></span>
 				<span class="tab-label">Einstellungen</span>
 			  </a>
 			</nav>
   <div style="margin-top:50px;" class="content">	
-			<center><p>Sie sind erfolgreich eingelogt.</p></center>
+			<form class="input-group">
+			  <div class="input-row">
+				<label>Name</label>
+				<input type="text" placeholder="Max Mustermann">
+			  </div>
+			  <div class="input-row">
+				<label>Adresse</label>
+				<input type="email" placeholder="mustermann@mail.de">
+			  </div>
+			  <div class="input-row">
+				<label>Passwort</label>
+				<input type="password">
+			  </div>
+			  <div style="margin-top:20px">
+				  <ul class="table-view">
+				  <li class="table-view-cell">
+					Angemeldet bleiben
+					<div class="toggle">
+					  <div class="toggle-handle"></div>
+					</div>
+				  </li>
+				  </ul>
+			  </div>
+			</form>
 			<div style="margin-top:50px">
-				<a data-ignore="push" href="login.html">
-					<button class="btn btn-negative btn-block">Ausloggen</button>
+				<a data-ignore="push" href="sucess.html">
+					<button class="btn btn-positive btn-block">Einloggen</button>
 				</a>
 			</div>
   </div>
