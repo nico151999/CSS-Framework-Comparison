@@ -13,6 +13,31 @@
             <li><a href="">Contact</a></li>
             <li style="float:right"><a href="">About</a></li>
         </ul>
+
+        <div class="card">
+            <form>
+                <h3>Registration</h3>
+                <input id="username" type="text"/>
+                <label for="username">Type a desired username</label>
+                <br/>
+                <br/>
+                <input id="mail" type="email"/>
+                <label for="mail">Type your mail</label>
+                <br/>
+                <br/>
+                <input id="password" type="password"/>
+                <label for="password">Type a desired password</label>
+
+                <input id="password_repeat" type="password"/>
+                <label for="password_repeat">Type your password again</label>
+                <br/>
+                <br/>
+                <input id="terms_of_usage" type="checkbox"/>
+                <label for="terms_of_usage">I agree with the <a href="#" onclick="document.getElementById('terms_of_usage_modal').style.display = 'block';">terms of usage</a>.</label>
+                <br/>
+                <input id="register" type="submit" value="Register"/>
+            </form>
+        </div>
 		
 		<!-- Login/Register Form including different Button Types, Checkboxes etc. Also add a popup called "terms of usage" containing a lorem ipsum sample -->
 		
@@ -27,6 +52,17 @@
 		<!-- Special Components -->
 		
 		<!-- Footer -->
+
+
+        <div id="terms_of_usage_modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span onclick="document.getElementById('terms_of_usage_modal').style.display = 'none';" class="close">&times;</span>
+                <p>These are the terms of usage you need to agree to be able to register</p>
+            </div>
+
+        </div>
 	
     </body>
 </html>
