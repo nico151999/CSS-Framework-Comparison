@@ -46,14 +46,14 @@
                 <th>Age</th>
             </tr>
             <tr>
-                <td>Jill</td>
-                <td>Smith</td>
+                <td>Max</td>
+                <td>Mustermann</td>
                 <td>50</td>
             </tr>
             <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
+                <td>Eva</td>
+                <td>Musterfrau</td>
+                <td>40</td>
             </tr>
         </table>
 
@@ -80,22 +80,70 @@
             <h3>Tab 3</h3>
             <p>This is the content of tab three</p>
         </div>
-		
-		<!-- Icons & Fonts -->
-		
-		<!-- Image Gallery -->
-		
-		<!-- Special Components -->
+
+        <br/>
+        <br/>
+
+        <h2>Fonts & Icons</h2>
+		<p>Icons can be added using an icon font, fonts can generally be added via css using a woff2 file for example.</p>
+
+        <br/>
+        <br/>
+
+        <div class="gallery">
+            <a href="#" onclick="document.getElementById('image1modal').style.display = 'block';">
+                <img src="res/image1.jpg" alt="Bild" width="600" height="400">
+            </a>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="gallery">
+            <a href="#" onclick="document.getElementById('image2modal').style.display = 'block';">
+                <img src="res/image2.jpg" alt="Bild" width="600" height="400">
+            </a>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="gallery">
+            <a href="#" onclick="document.getElementById('image1modal').style.display = 'block';">
+                <img src="res/image1.jpg" alt="Bild" width="600" height="400">
+            </a>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="gallery">
+            <a href="#" onclick="document.getElementById('image2modal').style.display = 'block';">
+                <img src="res/image2.jpg" alt="Bild" width="600" height="400">
+            </a>
+            <div class="desc">Description</div>
+        </div>
 		
 		<!-- Footer -->
 
 
         <div id="terms_of_usage_modal" class="modal">
 
-            <!-- Modal content -->
             <div class="modal-content">
                 <span onclick="document.getElementById('terms_of_usage_modal').style.display = 'none';" class="close">&times;</span>
                 <p>These are the terms of usage you need to agree to be able to register</p>
+            </div>
+
+        </div>
+
+        <div id="image1modal" class="modal">
+
+            <div class="modal-content" style="width: 600px">
+                <span onclick="document.getElementById('image1modal').style.display = 'none';" class="close">&times;</span>
+                <img src="res/image1.jpg" alt="Bild" width="600" height="400">
+            </div>
+
+        </div>
+
+        <div id="image2modal" class="modal">
+
+            <div class="modal-content" style="width: 600px">
+                <span onclick="document.getElementById('image2modal').style.display = 'none';" class="close">&times;</span>
+                <img src="res/image2.jpg" alt="Bild" width="600" height="400">
             </div>
 
         </div>
