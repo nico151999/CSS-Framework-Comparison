@@ -153,7 +153,7 @@ table th {
 }
 
 div.gallery {
-  margin: 5px;
+  margin: 5px 5px 5em 5px;
   border: 1px solid lightgray;
   float: left;
   width: 180px;
@@ -170,5 +170,15 @@ div.gallery img {
 
 div.desc {
   padding: 15px;
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: LightSlateGray;
+  color: white;
   text-align: center;
 }
