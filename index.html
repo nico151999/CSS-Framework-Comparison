@@ -57,9 +57,29 @@
             </tr>
         </table>
 
-		<!-- Table -->
-		
-		<!-- Tabs (can be put into an iframe in case of incompatibility) -->
+        <br/>
+        <br/>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'tab1')">Tab 1</button>
+            <button class="tablinks" onclick="openTab(event, 'tab2')">Tab 2</button>
+            <button class="tablinks" onclick="openTab(event, 'tab3')">Tab 3</button>
+        </div>
+
+        <div id="tab1" class="tabcontent">
+            <h3>Tab 1</h3>
+            <p>This is the content of tab one</p>
+        </div>
+
+        <div id="tab2" class="tabcontent">
+            <h3>Tab 2</h3>
+            <p>This is the content of tab two</p>
+        </div>
+
+        <div id="tab3" class="tabcontent">
+            <h3>Tab 3</h3>
+            <p>This is the content of tab three</p>
+        </div>
 		
 		<!-- Icons & Fonts -->
 		
@@ -79,6 +99,31 @@
             </div>
 
         </div>
+
+        <script>
+        document.getElementsByClassName('tablinks')[0].click();
+
+        function openTab(evt, cityName) {
+            // Declare all variables
+            let i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" activeTab", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " activeTab";
+        }
+        </script>
 	
     </body>
 </html>
