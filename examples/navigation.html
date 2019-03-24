@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Ratchet v2.2.0</title>
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -39,9 +39,8 @@
             </header>
     </div>
 
-    <h5> Titel Bar mit Icons</h5>
-
-    <div class="content-padded">
+    <h5> Titel Leiste mit Icons</h5>
+    <div style="padding-top: 30px" class="content-padded">
         <header class="bar bar-nav">
             <a class="icon icon-left-nav pull-left"></a>
             <a class="icon icon-compose pull-right"></a>
@@ -49,52 +48,85 @@
         </header>
     </div>
 
+    <h5>Titel Leiste mit Tabs</h5>
+
+    <div style="padding-top: 40px" class="content-padded">
+        <header class="bar bar-nav">
+            <button class="btn pull-left">
+                Links
+            </button>
+            <button class="btn pull-right">
+                Rechts
+            </button>
+            <div class="segmented-control">
+                <a class="control-item active">1. Tab</a>
+                <a class="control-item">2. Tab</a>
+                <a class="control-item">3. Tab</a>
+            </div>
+        </header>
+    </div>
+
+    <h5>Fußleiste mit Labels</h5>
+    <div style="padding-top: 10px" class="content-padded">
+        <nav class="bar bar-tab">
+            <a class="tab-item active" href="#">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">Home</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-person"></span>
+                <span class="tab-label">Profile</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-star-filled"></span>
+                <span class="tab-label">Favorites</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-search"></span>
+                <span class="tab-label">Search</span>
+            </a>
+            <a class="tab-item" href="#">
+                <span class="icon icon-gear"></span>
+                <span class="tab-label">Settings</span>
+            </a>
+        </nav>
+    </div>
 
 
-    <!--<h5> Titel Bar mit segmentierte Steuerung</h5>-->
 
-    <!--<div  style="padding-top: 50px" content="content-padded">-->
-    <!--<header class="bar bar-nav">-->
-        <!--<button class="btn pull-left">-->
-            <!--Left-->
-        <!--</button>-->
-        <!--<button class="btn pull-right">-->
-            <!--Right-->
-        <!--</button>-->
-        <!--<div class="segmented-control">-->
-            <!--<a class="control-item active">One</a>-->
-            <!--<a class="control-item">Two</a>-->
-            <!--<a class="control-item">Three</a>-->
-        <!--</div>-->
-    <!--</header>-->
-    <!--</div>-->
+        <div style="padding: 25px 0px 5px 0px" class="content-padded">
 
+            <nav class="bar bar-tab">
+                <a class="tab-item active" href="#">
+                Label
+                </a>
+                <a class="tab-item" href="#">
+                Label
+                </a>
+                <a class="tab-item" href="#">
+                Label
+                </a>
+            </nav>
         </div>
 
+    <h5 style="padding-top: 25px"> </h5>
 
-    <!--<nav class="bar bar-tab">-->
-        <!--<a class="tab-item active" href="#">-->
-            <!--<span class="icon icon-home"></span>-->
-            <!--<span class="tab-label">Home</span>-->
-        <!--</a>-->
-        <!--<a class="tab-item" href="#">-->
-            <!--<span class="icon icon-person"></span>-->
-            <!--<span class="tab-label">Profile</span>-->
-        <!--</a>-->
-        <!--<a class="tab-item" href="#">-->
-            <!--<span class="icon icon-star-filled"></span>-->
-            <!--<span class="tab-label">Favorites</span>-->
-        <!--</a>-->
-        <!--<a class="tab-item" href="#">-->
-            <!--<span class="icon icon-search"></span>-->
-            <!--<span class="tab-label">Search</span>-->
-        <!--</a>-->
-        <!--<a class="tab-item" href="#">-->
-            <!--<span class="icon icon-gear"></span>-->
-            <!--<span class="tab-label">Settings</span>-->
-        <!--</a>-->
-    <!--</nav>-->
-<!--</div>-->
+    <div style="padding-top: 0px" class="card">
+        <ul class="table-view">
+            <li class="table-view-cell">
+                <a class="push-right" href="standardbar.html" data-transition="slide-in">
+                    <strong>Standard Leisten</strong>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <h5 style="padding-top: 200px" >Tab Leiste mit Icons</h5>
+
+
+
+
+    </div>
 
 </body>
 </html>
