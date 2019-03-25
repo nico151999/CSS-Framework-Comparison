@@ -1134,6 +1134,23 @@ select {
   vertical-align: top;
 }
 
+.slider .slide img {
+  display: block;
+  width: 100%;
+  height: 570px;
+}
+
+.slider .slide-group .slide-text {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
 .toggle {
   position: relative;
   display: block;
@@ -1270,6 +1287,26 @@ select {
   line-height: 1;
   text-decoration: none;
 
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon.custom {
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+}
+
+.icon.custom {
+  display: inline-block;
+  font-family: Ratchicons;
+  font-size: 24px;
+  text-decoration: none;
   -webkit-font-smoothing: antialiased;
 }
 
