@@ -37,103 +37,114 @@
 <!-- Login/Register Form including different Button Types, Checkboxes etc. Also add a popup called "terms of usage" containing a lorem ipsum sample -->
 
 <div class="container">
-    <h4 style="width: 100%; text-align: center">Formular</h4>
+    <h4 style="width: 100%; text-align: center">Form</h4>
 
     <div class="row">
-        <form class="col s12">
+        <div class="card">
+            <form>
 
-            <div class="row">
+                <div class="card-content">
 
-                <div class="input-field col s6">
-                    <input id="first_name" type="text" class="validate">
-                    <label for="first_name">Vorname</label>
+                    <div class="row">
+
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" class="datepicker" placeholder="Date of Birth">
+                        </div>
+
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+
+
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Mail Address</label>
+                        </div>
+
+
+                    </div>
+
+                    <div class="file-field input-field">
+                        <div class="btn red">
+                            <span>File</span>
+                            <input type="file" multiple>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload a file">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row col s12">
+                        <p>
+                            <label>
+                                <input class="filled-in" type="checkbox"/>
+                                <span>Accept <a class="modal-trigger" href="#modal1">Terms of usage</a></span>
+                            </label>
+                        </p>
+                    </div>
+
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4>Terms of usage</h4>
+                            <p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    elit. Aenean commodo ligula eget dolor. Aenean
+                                    massa.
+                                </li>
+                                <li>Cum sociis natoque penatibus et magnis dis
+                                    parturient montes, nascetur ridiculus mus. Donec quam
+                                    felis, ultricies nec, pellentesque eu, pretium quis,
+                                    sem.
+                                </li>
+                                <li>Nulla consequat massa quis enim. Donec pede justo,
+                                    fringilla vel, aliquet nec, vulputate eget, arcu.
+                                </li>
+                                <li>In enim justo, rhoncus ut, imperdiet a, venenatis
+                                    vitae, justo. Nullam dictum felis eu pede mollis
+                                    pretium. Integer tincidunt.
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn">Close</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Nachname</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input type="text" class="datepicker" placeholder="Geburtsdatum">
+                <div class="card-action">
+                    <a href="#!" class="modal-close waves-effect btn-flat">I already have an account</a>
+                    <a href="#!" class="btn waves-effect waves-light right">Submit
+                        <i class="material-icons right">send</i>
+                    </a>
                 </div>
 
-                <div class="input-field col s12">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Passwort</label>
-                </div>
-
-
-                <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">E-Mail Adresse</label>
-                </div>
-
-
-            </div>
-
-            <div class="file-field input-field">
-                <div class="btn red">
-                    <span>Datei</span>
-                    <input type="file" multiple>
-                </div>
-                <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Lade eine oder mehrere Dateien hoch">
-                </div>
-            </div>
-            <br>
-            <div class="row col s12">
-                <p>
-                    <label>
-                        <input class="filled-in" type="checkbox"/>
-                        <span><a class="modal-trigger" href="#modal1">Nutzungsbedingungen</a> aktzeptieren</span>
-                    </label>
-                </p>
-            </div>
-
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal">
-                <div class="modal-content">
-                    <h4>Nutzungsbedingungen</h4>
-                    <p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit. Aenean commodo ligula eget dolor. Aenean
-                            massa.
-                        </li>
-                        <li>Cum sociis natoque penatibus et magnis dis
-                            parturient montes, nascetur ridiculus mus. Donec quam
-                            felis, ultricies nec, pellentesque eu, pretium quis,
-                            sem.
-                        </li>
-                        <li>Nulla consequat massa quis enim. Donec pede justo,
-                            fringilla vel, aliquet nec, vulputate eget, arcu.
-                        </li>
-                        <li>In enim justo, rhoncus ut, imperdiet a, venenatis
-                            vitae, justo. Nullam dictum felis eu pede mollis
-                            pretium. Integer tincidunt.
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Schließen</a>
-                </div>
-            </div>
-
-        </form>
-
+            </form>
+        </div>
     </div>
     <!-- Table -->
-    <h4 style="width: 100%; text-align: center">Tabelle</h4>
+    <h4 style="width: 100%; text-align: center">Table</h4>
     <div style="width: 100%; text-align: center;">
         <table class="highlight centered responsive-table">
             <thead>
             <tr>
                 <th>Name</th>
-                <th>Art</th>
-                <th>Schwierigkeit</th>
+                <th>Category</th>
+                <th>Difficulty</th>
             </tr>
             </thead>
 
@@ -141,17 +152,17 @@
             <tr>
                 <td>Materialize</td>
                 <td>CSS-Framework</td>
-                <td>Einfach</td>
+                <td>Easy</td>
             </tr>
             <tr>
                 <td>Django</td>
                 <td>Python-Framework</td>
-                <td>Mittel</td>
+                <td>Medium</td>
             </tr>
             <tr>
                 <td>NodeJs</td>
                 <td>Javascript-Framework</td>
-                <td>Schwer</td>
+                <td>Hard</td>
             </tr>
             </tbody>
         </table>
@@ -206,7 +217,15 @@
                 justo. Nullam dictum felis eu pede mollis pretium.
             </blockquote>
         </div>
-        <div id="test4" class="col s12"></div>
+        <div id="test4" class="col s12">
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing
+                elit. Aenean commodo ligula eget dolor. Aenean massa.
+                Cum sociis natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+        </div>
     </div>
 
     <!-- Icons & Fonts -->
@@ -266,7 +285,7 @@
         </div>
     </div>
     <!-- Image Gallery -->
-    <h4 style="width: 100%; text-align: center">Bildergalerie</h4>
+    <h4 style="width: 100%; text-align: center">Gallery</h4>
     <div class="col s12 m8 offset-m1 xl7 offset-xl1">
         <div class="slider">
             <ul class="slides">
@@ -299,15 +318,115 @@
         </div>
     </div>
     <!-- Special Components -->
-    <h4 style="width: 100%; text-align: center">Spezielle Komponenten</h4>
+    <h4 style="width: 100%; text-align: center">Special Components</h4>
 
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
+
+    <br/>
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+            <div class="circle"></div>
+        </div><div class="circle-clipper right">
+            <div class="circle"></div>
+        </div>
+        </div>
+    </div>
+
+    <br/>
+
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+    </ul>
+
+    <br/>
+
+    <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
+
+    <br/>
+
+    <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>
+
+    <br/>
+
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Picture" class="activator" src="pictures/mat.png" height="200" width="150">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+    </div>
+
+    <br/>
+
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Down Demo</a>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="#!">one<span class="badge">2</span></a></li>
+        <li><a href="#!">two<span class="new badge">1</span></a></li>
+        <li><a href="#!">three</a></li>
+        <li><a href="#!">four<span class="new badge">3</span></a></li>
+        <li><a href="#!">five</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!">three</a></li>
+        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+    </ul>
+
+    <br/>
+
+    <br/>
+
+    <br/>
 
 </div> <!-- Ende Container -->
 <!-- Footer -->
 
 <footer class="page-footer">
-    <div style="width: 100%; text-align: center; padding-bottom: 10px;">
-        This is the footer content
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2019 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
     </div>
 </footer>
 
@@ -316,34 +435,25 @@
 
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
-        let elem = document.querySelector('.sidenav');
-        M.Sidenav.init(elem, {
+        M.Sidenav.init(document.querySelector('.sidenav'), {
             inDuration: 350,
             outDuration: 350
         });
+
+        M.Datepicker.init(document.querySelectorAll('.datepicker'));
+
+        M.Modal.init(document.querySelectorAll('.modal'));
+
+        M.Tabs.init(document.querySelectorAll('.tabs'));
+
+        M.Slider.init(document.querySelectorAll('.slider'));
+
+        M.Collapsible.init(document.querySelectorAll('.collapsible'), {});
+
+        M.Tooltip.init(document.querySelectorAll('.tooltipped'), {});
+
+        M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), {});
     });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        let elems = document.querySelectorAll('.datepicker');
-        M.Datepicker.init(elems);
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        let elems = document.querySelectorAll('.modal');
-        M.Modal.init(elems);
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        let elem = document.querySelectorAll('.tabs');
-        M.Tabs.init(elem);
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        let elems = document.querySelectorAll('.slider');
-        M.Slider.init(elems);
-    });
-
-
 </script>
 </body>
 </html>
