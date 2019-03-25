@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Framework Bootstrap</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   	 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    	<!-- personal style sheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- font awsome for the icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+		<link href="/bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css" />
+	</head>
+    <body>
+	
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark static-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="img\Bootstrap.jpg" class="img-fluid" alt="Bootstrap-Logo" />
+				</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+  					<span class="navbar-toggler-icon"></span>
+  				</button>	
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+  					<ul class="navbar-nav navbar-left">
+  						<li class="nav-item">
+  							<a href="#" class="nav-link active">Home</a>
+  						</li>
+  						<li class="nav-item">
+  							<a href="#" class="nav-link">Komponenten</a>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+			
+			<!-- Login Register with Font Awesome Icons-->
+			<form class="navbar-form navbar-right">
+			<table class="login" role="presentation">
+				<tbody>
+					<tr>
+						<td>			
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa fa-envelope"></i></span>
+								</div>
+								<input type="email" class="form-control" placeholder="Email">
+							</div>
+						</td>
+						<td>
+						<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa fa-lock"></i></span>
+								</div>
+								<input type="password" class="form-control" placeholder="Passwort">
+							</div>
+						</td>
+						<td><button type="button" class="btn" style="Background-color:#d9d9d9">Login</button></td>
+					</tr>	
+					<tr>
+						<td><label style="margin-bottom: 0px; font-weight: normal; color:white;"><input type="checkbox" name="angemeldet_bleiben" value="remember-me" title="Angemeldet bleiben"  checked="checked" style="margin: 0; vertical-align: middle;" /> <small>Angemeldet bleiben</small></label></td>
+						<td><a href="#">Passwort vergessen</a></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>		
+          </form>
+		</nav>
+	
+		<!-- Short welcome -->
+		<div class="container-fluid padding">
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h1 class="display-4"><b>Willkommen zum CSS-Framework Bootstrap!</b></h1>
+					<p class="lead">Bootstrap ist ein freies CSS-Framework und wurde ursprünglich von
+					einem Designer und einem Entwickler bei Twitter ins Leben gerufen.
+					Inzwischen ist es zu einem der berühmtesten Front-End-Frameworks
+					und Open-Source-Projekte auf der ganzen Welt geworden. Das
+					Framework enthält HTML und CSS basierende Gestaltungsvorlagen für
+					Typografie Formulare, Buttons, Tabellen, Grid-Systeme, Navigations und
+					viele weitere Oberflächengestaltungselemente. Zusätzliche optionale
+					JavaScript-Erweiterungen enthält Bootsrap ebenfalls.</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		
+		<!-- three collum section -->
+		<div class="container-fluid padding">
+			<div class="row text-center padding">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<span style="color: Mediumslateblue;">
+					<i class="fab fa-html5 fa-7x"></i>
+					</span>
+					<h3>HTML5</h3>
+				</div>	
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<span style="color: Mediumslateblue;">
+					<i class="fab fa-css3-alt fa-7x"></i>
+					</span>
+					<h3>CSS3</h3>
+				</div>	
+				<div class="col-xs-12 col-md-4">
+					<span style="color: Mediumslateblue;">
+					<i class="fab fa-bootstrap fa-7x"></i>
+					</span>
+					<h3>Bootstrap4</h3>
+				</div>
+			</div>
+		</div>
+
+		<!-- fixed background -->
+		<figure>
+			<div class="fixed-wrap">
+				<div id="fixed"></div>	
+				<img src="img/a62a37ed8d69d2fd4d548f1cc949afc3.jpg">
+			</div>
+		</figure>
+	
+		<!-- Special Components -->
+		<!-- Image Gallery / Image Slider -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li data-target="#myCarousel" data-slide-to="5"></li>
+			</ul>
+			
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+				<img src="img/thumb-1920-816684.jpg" role="listbox" width="100%" height="550px" style="object-fit:cover">
+					<div class="carousel-caption">
+						<h1 class="display-2">Bootstrap</h1>
+						<h3>Welcome to the imageslider</h3>
+					</div>
+				</div>
+				<!--
+				<div class="carousel-item">
+					<img src="img/BTSJumbotron.png" role="listbox" width="100%" height="700px">
+				</div>
+				
+				<div class="carousel-item">
+					<img src="img/BTSDashboard.png" role="listbox" width="100%" height="700px">
+				</div>
+				
+				<div class="carousel-item">
+					<img src="img/BTSKarusell.png" role="listbox" width="100%" height="700px">
+				</div>
+				-->
+				<div class="carousel-item">
+					<img src="img/1.jpg" role="listbox" width="100%" height="550px" style="object-fit:cover">
+				</div>
+
+				<div class="carousel-item">
+					<img src="img/1.png" role="listbox" width="100%" height="550px" style="object-fit:scale-down;">
+				</div>
+
+				<div class="carousel-item">
+					<img src="img/2.png" role="listbox" width="100%" height="550px" style="object-fit:scale-down;">
+				</div>
+
+				<div class="carousel-item">
+					<img src="img/3.png" role="listbox" width="100%" height="550px" style="object-fit:scale-down;">
+				</div>
+
+			</div>
+			 
+			 <!-- Control Panels -->
+			 <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		
+		<hr>
+		<br>
+		<br>
+		
+		<!-- Bootstrap Komponenten -->
+		<h1><center><b>Bootstrap Komponenten</b></center></h2>
+		<br>
+		<!-- Table -->
+		<h2><b><i>Tabels</i></b></h2>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<p><b>Mobile Applikation</b></p>    
+					<table class="table table-striped" width="100%">
+						<thead>
+							<tr>
+								<th>OS</th>
+								<th>Chrome</th>
+								<th>Firefox</th>
+								<th>Safari</th>
+								<th>Android Browser&WebView </th>
+								<th>Edge</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Android</td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+							</tr>
+							<tr>
+								<td>iOS</td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col">
+					<p><b>Desktop</b></p>  			
+					<table class="table table-striped" width="100%">
+						<thead>
+							<tr>
+								<th>OS</th>
+								<th>Chrome</th>
+								<th>Firefox</th>
+								<th>Safari</th>
+								<th>Opera</th>
+								<th>Edge</th>
+								<th>IE</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Mac</td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-close"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-close"></i></span></td>
+							</tr>
+							<tr>
+								<td>Windows</td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-close"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+								<td><span class="input-group"><i class="fa fa-check"></i></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+
+		<!-- Buttons -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<h2><b><i>Buttons</i></b></h2>
+					<p>
+						<button type="button" class="btn btn-lg btn-default">Standard</button>
+						<button type="button" class="btn btn-lg btn-primary">Primär</button>
+						<button type="button" class="btn btn-lg btn-success">Erfolg</button>
+						<button type="button" class="btn btn-lg btn-info">Info</button>
+						<button type="button" class="btn btn-lg btn-warning">Warnung</button>
+						<button type="button" class="btn btn-lg btn-danger">Gefahr</button>
+						<button type="button" class="btn btn-light">Hell</button>
+						<button type="button" class="btn btn-dark">Dunkel</button>
+						<button type="button" class="btn btn-lg btn-link">Link</button>
+					</p>
+				</div>
+	  
+				<div class="col">
+					<h2><b><i>Badges</i></b></h2>
+					<h4>
+						<span class="badge badge-default">Standard</span>
+						<span class="badge badge-primary">Primär</span>
+						<span class="badge badge-success">Erfolg</span>
+						<span class="badge badge-info">Info</span>
+						<span class="badge badge-warning">Warnung</span>
+						<span class="badge badge-danger">Gefahr</span>
+						<span class="badge badge-light">Hell</span>
+						<span class="badge badge-dark">Dunkel</span>
+					</h4>
+				</div>
+			</div>
+	  </div>
+	  
+	  <br>
+	  
+		<!-- Alerts -->
+       <h2><b><i>Alerts</i></b></h2>	
+	   <div class="alert alert-success" role="alert">Erfolg</div>
+	   <div class="alert alert-info" role="alert">Information</div>
+	   <div class="alert alert-warning" role="alert">Warnung</div>
+	   <div class="alert alert-danger" role="alert">Gefahr</div>
+	   <div class="alert alert-light" role="alert">Hell</div>
+	   <div class="alert alert-dark" role="alert">Dunkel</div>
+	   
+	   <br>
+	   
+	   <!-- Progress Bar -->
+	   <h2><b><i>Progress Bar</i></b></h2>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped bg-light" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		
+		<br>
+		
+		<!-- Dropdown Menu -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<h2><b><i>Dropdown</i></b></h2>
+					<div class="dropdown">
+						<button class="btn btn-dark dropdown-toggle" type="button" id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bootstrap Team</button>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="about-us">
+							<a class="dropdown-item" href="#">Isabel</a>
+							<a class="dropdown-item" href="#">Tobi</a>
+							<a class="dropdown-item" href="#">Xandra</a>
+							<a class="dropdown-item" href="#">Jasmin</a>
+						</div>
+					</div>
+				</div>
+		
+				<div class="col">
+					<h2><b><i>Modal</i></b></h2>
+					<!-- Modal -->
+					<button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#flipFlop">Popup</button>
+
+					<!-- The modal -->
+					<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title" id="modalLabel">Popup</h4>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+														At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+														Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+														At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		
+		<!-- Navs -->
+		<h2><b><i>Navs</i></b></h2>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<p><b>Tabs</b></p>
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#html">HTML</a>
+						</li>
+			
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#css">CSS</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#js">JavaScript</a>
+						</li>
+						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preview</a>
+								<div class="dropdown-menu" aria-labelledby="Preview">
+									<a class="dropdown-item" data-toggle="tab" href="#mp">Mobile Phone</a>
+									<a class="dropdown-item" data-toggle="tab" href="#t">Tablet</a>
+									<a class="dropdown-item" data-toggle="tab" href="#l">Laptop</a>
+									<a class="dropdown-item" data-toggle="tab" href="#d">Desktop</a>
+								</div>
+						</li>
+					</ul>
+					<div class="tab-content">
+					<div id="html" class="tab-pane active">
+						<h5>HTML Tab</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="css" class="tab-pane fade">
+						<h5>CSS Tab</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="js" class="tab-pane fade">
+						<h5>JavaScript Tab</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="mp" class="tab-pane fade">
+						<h5>Mobile Phone</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="t" class="tab-pane fade">
+						<h5>Tablet</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="l" class="tab-pane fade">
+						<h5>Laptop</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="d" class="tab-pane fade">
+						<h5>Desktop</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					</div>
+				</div>
+			<br>
+				<div class="col">
+					<p><b>Pills</b></p>	
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#phtml">HTML</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#pcss">CSS</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#pjs">JavaScript</a>
+						</li>
+						
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Preview</a>
+								<div class="dropdown-menu" aria-labelledby="Preview">
+									<a class="dropdown-item" data-toggle="tab" href="#pmp">Mobile Phone</a>
+									<a class="dropdown-item" data-toggle="tab" href="#pt">Tablet</a>
+									<a class="dropdown-item" data-toggle="tab" href="#pl">Laptop</a>
+									<a class="dropdown-item" data-toggle="tab" href="#pd">Desktop</a>
+								</div>
+						</li>
+					</ul>
+					<div class="tab-content">
+					<div id="phtml" class="tab-pane active">
+						<h5>HTML Pill</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="pcss" class="tab-pane fade">
+						<h5>CSS Pill</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="pjs" class="tab-pane fade">
+						<h5>JavaScript Pill</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="pmp" class="tab-pane fade">
+						<h5>Mobile Phone</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="pt" class="tab-pane fade">
+						<h5>Tablet</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="pl" class="tab-pane fade">
+						<h5>Laptop</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div id="pd" class="tab-pane fade">
+						<h5>Desktop</h5>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+		<hr>
+
+		<!-- Footer -->
+		<footer>
+			<center>
+			<p><b>&#174; by The Bootstrap Group</b></p>
+			</center>
+		</footer>
+		
+		<!-- Bootstrap-JavaScript
+    ================================================== -->
+    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    </body>
+</html>
